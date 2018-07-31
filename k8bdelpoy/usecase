@@ -1,0 +1,13 @@
+Use Case:
+    -> Createand and depoly openmrs app using K8S
+        => Sys requirements
+        ===================
+            =>Install tomcat
+            =>Install Java
+            =>Get the code openmrs for repostiry
+            =>Build it using Jenkins
+            =>Get the "WAR" file
+            =>Place that war file in tomcat's web apps folder
+            =>enable the port 8080
+            =>Run it in Browser
+            
