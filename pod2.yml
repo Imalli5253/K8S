@@ -1,5 +1,5 @@
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
     name: nginx
     labels:
@@ -7,8 +7,15 @@ metadata:
 spec:
   containers:
   - name: myapp
+<<<<<<< HEAD
     image: nginx
     ports:
     - containerPort: 80
       hostPort: 8080
   
+=======
+    image: jenkins
+    ports:
+    - containerPort: 8080
+    - targetPort: 8080
+>>>>>>> 0e680b75666d18c386acaf0149f52d24be4ccd53
