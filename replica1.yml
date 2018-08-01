@@ -10,10 +10,18 @@ spec:
     metadata:
       labels:
         app: nginx
+<<<<<<< HEAD
+        ver: "1.0"
+=======
         ver: '1.0'
+>>>>>>> 0e680b75666d18c386acaf0149f52d24be4ccd53
     spec:
      containers:
      - name: simplae-pod
        image: nginx
        ports:
         - containerPort: 80
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0e680b75666d18c386acaf0149f52d24be4ccd53
