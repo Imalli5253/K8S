@@ -1,0 +1,15 @@
+apiversion: v1
+kind: Service
+apiVersion: v1
+metadata:
+  name: myapp-seivce
+spec:
+  selector:
+    app: nginx
+  type: NodePort
+  ports:
+  - name: http
+    port: 80
+    targetPort: 30001
+    protocol: TCP
+ 
