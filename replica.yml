@@ -1,0 +1,20 @@
+kind: ReplicationController
+apiVersion: v1
+metadata:
+  labels:
+    name: myapp-pod
+spec:
+  replicas: 2
+  selector: 
+    app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+        ver: '1.0'
+    spec:
+     containers:
+     - name: simplae-pod
+       image: nginx
+       ports:
+        - containerPort: 80
