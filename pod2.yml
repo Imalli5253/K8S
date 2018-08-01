@@ -1,13 +1,14 @@
 kind: Pod
 apiVersion: v1
 metadata:
-    name: myapp
+    name: nginx
     labels:
-      name: Jenkins
+      name: nginx
 spec:
   containers:
   - name: myapp
-    image: java
+    image: nginx
     ports:
-    - containerPort: 8080
+    - containerPort: 80
+      hostPort: 8080
   
