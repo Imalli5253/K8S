@@ -1,7 +1,7 @@
 kind: ReplicationController
 apiVersion: v1
 metadata:
-  name: Replication
+  name: replication
 spec:
   replicas: 3
   selector:
